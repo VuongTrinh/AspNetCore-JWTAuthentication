@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using JWTAuthentication.WebApi.Entities;
+using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 
 namespace JWTAuthentication.WebApi.Models
 {
@@ -6,5 +8,6 @@ namespace JWTAuthentication.WebApi.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public List<RefreshToken> RefreshTokens { get; set; }
     }
 }
